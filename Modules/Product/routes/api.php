@@ -14,6 +14,6 @@ use Modules\Product\Http\Controllers\ProductController;
  *
 */
 
-//Route::middleware('auth:passport')->group(function () {
+Route::middleware('auth:api')->group(function () {
     Route::resource("products", ProductController::class);
-//});
+});
